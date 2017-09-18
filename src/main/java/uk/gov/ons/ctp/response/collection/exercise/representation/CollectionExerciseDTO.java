@@ -1,13 +1,13 @@
 package uk.gov.ons.ctp.response.collection.exercise.representation;
 
-import java.util.Date;
-import java.util.List;
-import java.util.UUID;
-
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
 
 /**
  * CollectionExercise API representation.
@@ -44,7 +44,7 @@ public class CollectionExerciseDTO {
   private CollectionExerciseDTO.CollectionExerciseState state;
 
   private List<CaseTypeDTO> caseTypes;
-  
+
   private String exerciseRef;
 
   /**
