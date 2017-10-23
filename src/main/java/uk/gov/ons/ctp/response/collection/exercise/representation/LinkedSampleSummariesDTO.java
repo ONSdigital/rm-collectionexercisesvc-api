@@ -1,5 +1,6 @@
 package uk.gov.ons.ctp.response.collection.exercise.representation;
 
+import java.util.List;
 import java.util.UUID;
 
 import lombok.AccessLevel;
@@ -13,8 +14,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
-public class LinkSampleSummaryOutputDTO {
+public class LinkedSampleSummariesDTO {
 
   private UUID collectionExerciseId;
-  private UUID sampleSummaryId;
+  private List<UUID> sampleSummaryIds;
 }

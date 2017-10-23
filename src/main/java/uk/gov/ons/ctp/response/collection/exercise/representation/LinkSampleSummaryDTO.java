@@ -16,6 +16,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class LinkSampleSummaryDTO {
   
-  private List<UUID> sampleSummaryList;
+  private List<UUID> sampleSummaryIds;
 
 }
