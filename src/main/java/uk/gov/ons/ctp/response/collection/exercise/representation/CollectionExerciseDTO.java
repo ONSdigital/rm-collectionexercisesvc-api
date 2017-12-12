@@ -47,6 +47,8 @@ public class CollectionExerciseDTO {
 
   private String exerciseRef;
 
+  private String userDescription;
+
   /**
    * enum for collection exercise state
    */
