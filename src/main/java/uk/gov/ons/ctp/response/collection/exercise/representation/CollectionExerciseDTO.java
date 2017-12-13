@@ -49,6 +49,13 @@ public class CollectionExerciseDTO {
 
   private String userDescription;
 
+  private Date created;
+
+  private Date updated;
+
+  private Boolean deleted;
+    
+
   /**
    * enum for collection exercise state
    */
