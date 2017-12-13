@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -45,8 +47,10 @@ public class CollectionExerciseDTO {
 
   private List<CaseTypeDTO> caseTypes;
 
+  @Pattern(regexp = "^[0-9]{1,6}$")
   private String exerciseRef;
 
+  @Size(max = 50)
   private String userDescription;
 
   private Date created;
