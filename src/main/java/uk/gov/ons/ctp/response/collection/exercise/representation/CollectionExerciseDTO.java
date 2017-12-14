@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Date;
@@ -19,10 +20,16 @@ import java.util.UUID;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CollectionExerciseDTO {
 
+  public interface PostValidation {}
+  public interface PutValidation {}
+  public interface PatchValidation {}
+
   private UUID id;
 
+  @NotNull(groups = {PostValidation.class, PutValidation.class})
   private String surveyId;
 
+  @NotNull(groups = { PostValidation.class, PutValidation.class })
   private String name;
 
   private Date actualExecutionDateTime;
@@ -47,10 +54,12 @@ public class CollectionExerciseDTO {
 
   private List<CaseTypeDTO> caseTypes;
 
-  @Pattern(regexp = "^[0-9]{1,6}$")
+  @NotNull(groups = { PostValidation.class, PutValidation.class })
+  @Pattern(regexp = "^[0-9]{1,6}$", groups = { PostValidation.class, PutValidation.class, PatchValidation.class })
   private String exerciseRef;
 
-  @Size(max = 50)
+  @NotNull(groups = { PostValidation.class, PutValidation.class })
+  @Size(max = 50, groups = { PostValidation.class, PutValidation.class, PatchValidation.class })
   private String userDescription;
 
   private Date created;
