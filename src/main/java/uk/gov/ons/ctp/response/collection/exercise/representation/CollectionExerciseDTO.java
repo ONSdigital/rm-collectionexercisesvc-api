@@ -30,6 +30,7 @@ public class CollectionExerciseDTO {
   private String surveyId;
 
   @NotNull(groups = { PostValidation.class, PutValidation.class })
+  @Size(max = 20, min = 1, groups = { PostValidation.class, PutValidation.class, PatchValidation.class })
   private String name;
 
   private Date actualExecutionDateTime;
@@ -59,7 +60,7 @@ public class CollectionExerciseDTO {
   private String exerciseRef;
 
   @NotNull(groups = { PostValidation.class, PutValidation.class })
-  @Size(max = 50, groups = { PostValidation.class, PutValidation.class, PatchValidation.class })
+  @Size(max = 50, min = 1, groups = { PostValidation.class, PutValidation.class, PatchValidation.class })
   private String userDescription;
 
   private Date created;
