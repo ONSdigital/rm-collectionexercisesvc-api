@@ -20,10 +20,6 @@ import java.util.UUID;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class CollectionExerciseDTO {
 
-  public interface PostValidation {}
-  public interface PutValidation {}
-  public interface PatchValidation {}
-
   private UUID id;
 
   @NotNull(groups = {PutValidation.class})
@@ -72,7 +68,20 @@ public class CollectionExerciseDTO {
   private Date updated;
 
   private Boolean deleted;
-    
+
+  /**
+   * Empty interface to use as a marker for validation of POST requests
+   */
+  public interface PostValidation { }
+  /**
+   * Empty interface to use as a marker for validation of PUT requests
+   */
+  public interface PutValidation { }
+  /**
+   * Empty interface to use as a marker for validation of PUT sub-resource requests
+   */
+  public interface PatchValidation { }
+
 
   /**
    * enum for collection exercise state
