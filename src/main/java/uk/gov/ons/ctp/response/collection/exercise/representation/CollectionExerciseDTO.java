@@ -29,7 +29,6 @@ public class CollectionExerciseDTO {
   // surveyRef.  This field will not be set when returning collection exercises (input field only)
   private String surveyRef;
 
-  @NotNull(groups = { PostValidation.class, PutValidation.class })
   @Size(max = 20, min = 1, groups = { PostValidation.class, PutValidation.class, PatchValidation.class })
   private String name;
 
