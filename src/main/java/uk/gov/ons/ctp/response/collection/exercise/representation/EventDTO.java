@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.UUID;
 
@@ -13,6 +15,10 @@ import java.util.UUID;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class EventDTO {
     private UUID collectionExerciseId;
+
+    @NotNull
+    @Size(max=20, min=1)
     private String tag;
+    @NotNull
     private Date timestamp;
 }
