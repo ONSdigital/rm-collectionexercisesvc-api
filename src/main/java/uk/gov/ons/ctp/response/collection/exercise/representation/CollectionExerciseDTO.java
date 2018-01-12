@@ -1,5 +1,7 @@
 package uk.gov.ons.ctp.response.collection.exercise.representation;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -105,4 +107,13 @@ public class CollectionExerciseDTO {
     PUBLISH
   }
 
+  @JsonIgnore
+  public String getSurveyRef() {
+    return surveyRef;
+  }
+
+  @JsonProperty
+  public void setSurveyRef(String surveyRef) {
+    this.surveyRef = surveyRef;
+  }
 }
