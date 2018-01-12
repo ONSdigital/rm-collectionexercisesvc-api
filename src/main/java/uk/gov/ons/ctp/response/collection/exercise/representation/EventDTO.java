@@ -14,6 +14,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class EventDTO {
+    private UUID id;
+
     private UUID collectionExerciseId;
 
     @NotNull
