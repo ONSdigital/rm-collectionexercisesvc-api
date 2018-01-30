@@ -30,6 +30,7 @@
     <dependency>
       <groupId>net.codesup.util</groupId>
       <artifactId>jaxb2-rich-contract-plugin</artifactId>
+      <version>1.18.0</version>
     </dependency>
   </dependencies>
 
