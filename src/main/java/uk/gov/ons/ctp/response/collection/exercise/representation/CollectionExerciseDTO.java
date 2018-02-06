@@ -106,6 +106,7 @@ public class CollectionExerciseDTO {
     EVENTS_ADDED,
     EVENTS_DELETED,
     CI_SAMPLE_ADDED,
+    CI_SAMPLE_DELETED,
     REVIEWED,
     EXECUTION_COMPLETE,
     EXECUTE,
