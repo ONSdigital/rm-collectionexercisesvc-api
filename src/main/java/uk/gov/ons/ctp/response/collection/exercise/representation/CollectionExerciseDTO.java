@@ -96,7 +96,7 @@ public class CollectionExerciseDTO {
     EXECUTED,
     VALIDATED,
     FAILEDVALIDATION,
-    PUBLISHED
+    LIVE
   }
 
   /**
@@ -112,7 +112,8 @@ public class CollectionExerciseDTO {
     EXECUTE,
     VALIDATE,
     INVALIDATE,
-    PUBLISH
+    PUBLISH,
+    GO_LIVE
   }
 
   @JsonIgnore
