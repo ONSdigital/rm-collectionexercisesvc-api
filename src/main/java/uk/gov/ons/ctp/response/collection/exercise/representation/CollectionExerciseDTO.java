@@ -88,8 +88,11 @@ public class CollectionExerciseDTO {
    * enum for collection exercise state
    */
   public enum CollectionExerciseState {
-    INIT,
-    PENDING,
+    CREATED,
+    SCHEDULED,
+    READY_FOR_REVIEW,
+    READY_FOR_LIVE,
+    EXECUTION_STARTED,
     EXECUTED,
     VALIDATED,
     FAILEDVALIDATION,
@@ -100,7 +103,11 @@ public class CollectionExerciseDTO {
    * enum for collection exercise event
    */
   public enum CollectionExerciseEvent {
-    REQUEST,
+    EVENTS_ADDED,
+    EVENTS_DELETED,
+    CI_SAMPLE_ADDED,
+    REVIEWED,
+    EXECUTION_COMPLETE,
     EXECUTE,
     VALIDATE,
     INVALIDATE,
