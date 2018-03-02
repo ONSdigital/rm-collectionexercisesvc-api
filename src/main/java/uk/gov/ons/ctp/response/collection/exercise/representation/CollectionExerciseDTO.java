@@ -113,7 +113,8 @@ public class CollectionExerciseDTO {
     VALIDATE,
     INVALIDATE,
     PUBLISH,
-    GO_LIVE
+    GO_LIVE,
+    RESET
   }
 
   @JsonIgnore
