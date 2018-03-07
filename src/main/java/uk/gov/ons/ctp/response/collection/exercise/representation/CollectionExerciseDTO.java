@@ -70,6 +70,8 @@ public class CollectionExerciseDTO {
 
   private Boolean deleted;
 
+  private SampleUnitValidationErrorDTO[] validationErrors;
+
   /**
    * Empty interface to use as a marker for validation of POST requests
    */
