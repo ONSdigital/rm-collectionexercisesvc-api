@@ -15,7 +15,20 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class LinkSampleSummaryDTO {
-  
-  private List<UUID> sampleSummaryIds;
 
+  /**
+   * Valid states for a SampleLink
+   */
+  public enum SampleLinkState {
+    INIT, ACTIVE
+  }
+
+  /**
+   * Valid events that can be fired at a SampleLink state machine
+   */
+  public enum SampleLinkEvent {
+    ACTIVATE
+  }
+
+  private List<UUID> sampleSummaryIds;
 }
