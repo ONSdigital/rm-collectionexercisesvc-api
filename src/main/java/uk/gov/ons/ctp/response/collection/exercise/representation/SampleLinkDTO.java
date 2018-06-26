@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class SampleLinkDTO {
-    String sampleSummaryId;
-    String collectionExerciseId;
-    String state;
+  String sampleSummaryId;
+  String collectionExerciseId;
+  String state;
 }
