@@ -4,16 +4,12 @@ import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * SampleUnitGroup API representation.
- */
+/** SampleUnitGroup API representation. */
 @Data
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class SampleUnitGroupDTO {
 
-  /**
-   * enum for survey unit group state
-   */
+  /** enum for survey unit group state */
   public enum SampleUnitGroupState {
     INIT,
     VALIDATED,
@@ -21,9 +17,7 @@ public class SampleUnitGroupDTO {
     PUBLISHED
   }
 
-  /**
-   * enum for survey unit group event
-   */
+  /** enum for survey unit group event */
   public enum SampleUnitGroupEvent {
     VALIDATE,
     INVALIDATE,
