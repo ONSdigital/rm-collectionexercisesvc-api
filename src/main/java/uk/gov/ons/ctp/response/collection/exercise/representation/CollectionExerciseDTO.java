@@ -78,6 +78,8 @@ public class CollectionExerciseDTO {
 
   private SampleUnitValidationErrorDTO[] validationErrors;
 
+  private List<EventDTO> events;
+
   /** Empty interface to use as a marker for validation of POST requests */
   public interface PostValidation {}
 
