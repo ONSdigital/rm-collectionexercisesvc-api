@@ -11,5 +11,4 @@ import lombok.NoArgsConstructor;
 public class SampleLinkDTO {
   String sampleSummaryId;
   String collectionExerciseId;
-  String state;
 }
