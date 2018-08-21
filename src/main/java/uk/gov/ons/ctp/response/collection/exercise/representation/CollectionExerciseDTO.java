@@ -33,8 +33,6 @@ public class CollectionExerciseDTO {
       max = 20,
       min = 1,
       groups = {PostValidation.class, PutValidation.class, PatchValidation.class})
-  private String name;
-
   private Date actualExecutionDateTime;
 
   private Date scheduledExecutionDateTime;
